@@ -37,7 +37,7 @@ ler_teclado:
 		storei r4, r2 ; passa o conteudo da leitura do teclado em r2 para endereco de memoria apontado por r4
 		inc r4 ;icaminha com o ponteiro da string
 		inc r0 ; incrementa pos na tela
-		cmp r3, r1 ; verifica se eh o ENTER
+		cmp r2, r1 ; verifica se eh o ENTER
 		jne loopTecla ; se noa for enter termina o procedimento	
 		inc r4
 		loadn r4, #'\0'
